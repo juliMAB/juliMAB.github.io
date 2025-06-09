@@ -392,19 +392,21 @@ h4 {
     display: inline-flex;
     align-items: center;
     padding: 10px 25px;
-    background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+    background: linear-gradient(to right, var(--secondary-color), var(--accent-color), var(--secondary-color));
+    background-size: 200%;
+    background-position: left;
     color: white;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
-    transition: var(--transition);
+    transition: all 0.4s ease;
     box-shadow: 0 4px 15px rgba(76, 201, 240, 0.3);
 }
 
 .project-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(76, 201, 240, 0.4);
-    background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
+    background-position: right;
 }
 
 .project-link i {
