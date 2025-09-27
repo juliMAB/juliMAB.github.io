@@ -355,7 +355,6 @@
             }
 
             .container.style3 > .wrapper > .inner {
-                --gutters: 3rem;
                 --padding-horizontal: 3rem;
                 --padding-vertical: 4rem;
                 padding: var(--padding-vertical) var(--padding-horizontal);
