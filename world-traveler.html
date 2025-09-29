@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>World Traveler - Julian Aguirre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <meta name="description" content="World Traveler - Hypercasual voxel art mobile game by Julian Aguirre">
+    <link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,700;1,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/icons.js"></script>
+    <style>
+        .centered-image .frame img {
+            width: auto !important;
+            height: auto !important;
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .centered-content {
+            text-align: center;
+        }
+        
+        .centered-content h2, .centered-content h3, .centered-content h4 {
+            color: #ffffff !important;
+            text-align: center;
+        }
+        
+        .centered-content p, .centered-content ul, .centered-content li {
+            color: #cccccc !important;
+            text-align: center;
+        }
+        
+        .centered-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .centered-content ul li {
+            margin-bottom: 0.5em;
+        }
+        
+        .webgl-game {
+            width: 490px;
+            height: 944px;
+            border: 2px solid #C685D6;
+            border-radius: 1rem;
+            background-color: #1a1a1a;
+            margin: 2rem 0;
+        }
+        
+        /* Override container width for World Traveler page */
+        .container.style3 > .wrapper {
+            width: 40rem !important; /* Increase from default 30rem */
+            max-width: 90vw; /* Ensure responsiveness */
+        }
+        
+        /* Alternative: make it even wider */
+        /* .container.style3 > .wrapper {
+            width: 70rem !important;
+            max-width: 95vw;
+        } */
+        
+        /* Custom width for World Traveler page */
+        #main > .inner {
+            --width: 80rem; /* Increase from default 70rem to make it wider */
+            max-width: 90vw; /* Ensure it doesn't exceed 90% of viewport width */
+        }
+        
+        /* Fix for centering issue */
+        .style3 > .wrapper > .inner {
+            --gutters: 0rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main">
+            <div class="inner">
+                <!-- Back button -->
+                <div id="container01" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <ul id="buttons_back" class="style1 buttons">
+                                <li>
+                                    <a href="index.html" class="button n01" role="button">
+                                        <span class="label">← Back to Portfolio</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Header -->
+                <div id="container02" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <p id="project_platform" class="style3">Mobile Game</p>
+                            <h1 id="project_title" class="style2">World Traveler</h1>
+                            <p id="project_subtitle" class="style4">Hypercasual Voxel Art Adventure</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Image -->
+                <div id="container03" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div id="main_image" class="style3 image centered-image" data-position="center">
+                                <span class="frame">
+                                    <img src="img/world-traveler-main.PNG" alt="World Traveler Main Screenshot"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WebGL Game Demo -->
+                <div id="container_game" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h2 id="game_title" class="style1">Play the Game</h2>
+                            <p id="game_description" class="style4">
+                                Try out World Traveler directly in your browser! Tap or click to change the plane's direction.
+                            </p>
+                            <div class="webgl-game">
+                                <iframe src="WebGL/index.html" 
+                                        style="width: 425px; height: 900px; border: none; border-radius: calc(1rem - 2px);"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p id="game_note" class="style4">
+                                <em>Note: Game optimized for mobile devices. Use touch controls or mouse clicks to play.</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Description -->
+                <div id="container04" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h2 id="about_title" class="style1">About World Traveler</h2>
+                            <p id="project_description" class="style4">
+                                World Traveler is a hypercasual mobile game featuring charming voxel art graphics. Players control a plane that flies automatically forward through various environments, using simple tap controls to change direction and navigate obstacles.
+                            </p>
+                            
+                            <h3 id="gameplay_title" class="style1">Gameplay Mechanics</h3>
+                            <p id="gameplay_description" class="style4">
+                                The core gameplay is elegantly simple: your plane flies forward automatically, and you tap the screen to change its direction. This creates an engaging experience that's easy to learn but challenging to master as you navigate through increasingly complex environments.
+                            </p>
+                            
+                            <h3 id="features_title" class="style1">Key Features</h3>
+                            <ul id="features_list" class="style4">
+                                <li>Simple one-touch controls - tap to change direction</li>
+                                <li>Beautiful voxel art style with vibrant environments</li>
+                                <li>Shop system with various plane skins and customization</li>
+                                <li>Global leaderboard to compete with other players</li>
+                                <li>Achievement system with multiple challenges</li>
+                                <li>Hypercasual gameplay perfect for quick sessions</li>
+                                <li>Smooth performance optimized for Android devices</li>
+                            </ul>
+                            
+                            <h3 id="art_style_title" class="style1">Voxel Art Design</h3>
+                            <p id="art_description" class="style4">
+                                The game features a distinctive voxel art style that creates a charming, blocky aesthetic reminiscent of modern indie games. Each environment is carefully crafted with attention to color harmony and visual appeal, making the flying experience both relaxing and visually engaging.
+                            </p>
+                            
+                            <h3 id="role_title" class="style1">My Role</h3>
+                            <p id="role_description" class="style4">
+                                As the solo developer of World Traveler, I handled every aspect of the project:<br>
+                                • <strong>Game Programming:</strong> Core gameplay mechanics and systems<br>
+                                • <strong>Game Design:</strong> Level design and progression systems<br>
+                                • <strong>Art Direction:</strong> Voxel art style and visual design<br>
+                                • <strong>UI/UX Design:</strong> Interface design and user experience<br>
+                                • <strong>System Integration:</strong> Shop, leaderboard, and achievement systems<br>
+                                • <strong>Platform Optimization:</strong> Android-specific optimizations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Source Code Contact -->
+                <div id="container_source" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h3 id="source_title" class="style1">Source Code Access</h3>
+                            <p id="source_description" class="style4">
+                                If you're interested in accessing the source code for this project, please feel free to contact me at:
+                            </p>
+                            <p id="email_contact" class="style4">
+                                <strong>julian99aguirre@gmail.com</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -358,6 +358,7 @@
                 --padding-vertical: 4rem;
                 padding: var(--padding-vertical) var(--padding-horizontal);
                 border-radius: calc(1rem - 1px);
+                justify-items: anchor-center;
             }
 
             .container.style3.default > .wrapper > .inner > * {
@@ -1236,6 +1237,7 @@
                     --gutters: 3rem;
                     --padding-horizontal: 2rem;
                     --padding-vertical: 3rem;
+                    justify-items: anchor-center;
                 }
 
                 .container.style3.columns > .wrapper > .inner {
