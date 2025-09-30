@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>World Traveler - Julian Aguirre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <meta name="description" content="World Traveler - Hypercasual voxel art mobile game by Julian Aguirre">
+    <link rel="icon" type="image/png" href="img/world-traveler-preview.png">
+    <link rel="shortcut icon" type="image/png" href="img/world-traveler-preview.png">
+    <link rel="apple-touch-icon" href="img/world-traveler-preview.png">
+    <link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,700;1,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/icons.js"></script>
+    <style>
+        .centered-image .frame img {
+            width: auto !important;
+            height: auto !important;
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .centered-content {
+            text-align: center;
+        }
+        
+        .centered-content h2, .centered-content h3, .centered-content h4 {
+            color: #ffffff !important;
+            text-align: center;
+        }
+        
+        .centered-content p {
+            color: #cccccc !important;
+            text-align: center;
+            font-size: 0.75em !important;
+            line-height: 1.875 !important;
+            font-family: 'Inter', sans-serif !important;
+        }
+        
+        .centered-content ul, .centered-content li {
+            color: #cccccc !important;
+            text-align: center;
+        }
+        
+        .centered-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .centered-content ul li {
+            margin-bottom: 0.5em;
+        }
+        
+        .webgl-game {
+            width: 490px;
+            height: 944px;
+            border: 2px solid #C685D6;
+            border-radius: 1rem;
+            background-color: #1a1a1a;
+            margin: 2rem 0;
+        }
+        
+        /* Override container width for World Traveler page */
+        .container.style3 > .wrapper {
+            width: 40rem !important; /* Increase from default 30rem */
+            max-width: 90vw; /* Ensure responsiveness */
+        }
+        
+        /* Alternative: make it even wider */
+        /* .container.style3 > .wrapper {
+            width: 70rem !important;
+            max-width: 95vw;
+        } */
+        
+        /* Custom width for World Traveler page */
+        #main > .inner {
+            --width: 80rem; /* Increase from default 70rem to make it wider */
+            max-width: 90vw; /* Ensure it doesn't exceed 90% of viewport width */
+        }
+        
+        /* Improve text consistency and spacing */
+        .centered-content h3 {
+            margin-top: 2rem !important;
+            margin-bottom: 1rem !important;
+        }
+        
+        /* Reduce large gaps between sections */
+        .container.style3:not(:first-child) {
+            margin-top: 1.5rem !important;
+        }
+        
+        .container.style3:not(:last-child) {
+            margin-bottom: 1.5rem !important;
+        }
+        
+        /* Special spacing for game container */
+        #container_game {
+            margin-top: 2rem !important;
+            margin-bottom: 2rem !important;
+        }
+        
+        /* Fix for centering issue */
+        .style3 > .wrapper > .inner {
+            --gutters: 0rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main">
+            <div class="inner">
+                <!-- Back button -->
+                <div id="container01" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <ul id="buttons_back" class="style1 buttons">
+                                <li>
+                                    <a href="index.html" class="button n01" role="button">
+                                        <span class="label">← Back to Portfolio</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Header -->
+                <div id="container02" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <p id="project_platform" class="style3">Mobile Game</p>
+                            <h1 id="project_title" class="style2">World Traveler</h1>
+                            <p id="project_dev_date" class="style3">January 2024 - April 2024</p>
+                            <p id="project_subtitle" class="style4">Hypercasual Voxel Art Adventure</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Image -->
+                <div id="container03" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div id="main_image" class="style3 image centered-image" data-position="center">
+                                <span class="frame">
+                                    <img src="img/world-traveler-main.PNG" alt="World Traveler Main Screenshot"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WebGL Game Demo -->
+                <div id="container_game" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h2 id="game_title" class="style1">Play the Game</h2>
+                            <p id="game_description" class="style4">
+                                Try out World Traveler directly in your browser! Tap or click to change the plane's direction.
+                            </p>
+                            <div class="webgl-game">
+                                <iframe src="WebGL/index.html" 
+                                        style="width: 425px; height: 900px; border: none; border-radius: calc(1rem - 2px);"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p id="game_note" class="style4">
+                                <em>Note: Game optimized for mobile devices. Use touch controls or mouse clicks to play.</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Section -->
+                <div id="container_about" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h2 id="about_title" class="style1">About World Traveler</h2>
+                            <p id="project_description" class="style4">
+                                This project was born from the capital generated by our first game, which allowed us to finance World Traveler to demonstrate our expertise in developing Android projects. Currently, the project is uploaded to Google Play Console as an internal release, and our goal is to publish it to showcase our skills in creating hypercasual games that are simple, visually appealing, and engaging.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gameplay Section -->
+                <div id="container_gameplay" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h3 id="gameplay_title" class="style1">Gameplay Mechanics</h3>
+                            <p id="gameplay_description" class="style4">
+                                The core gameplay is elegantly simple: your plane flies forward automatically, and you tap the screen to change its direction. This creates an engaging experience that's easy to learn but challenging to master as you navigate through increasingly complex environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Features Section -->
+                <div id="container_features" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h3 id="features_title" class="style1">Key Features</h3>
+                            <p id="features_list" class="style4">
+                                Simple one-touch controls - tap to change direction • Beautiful voxel art style with vibrant environments • Shop system with various plane skins and customization • Global leaderboard to compete with other players • Achievement system with multiple challenges • Hypercasual gameplay perfect for quick sessions • Smooth performance optimized for Android devices
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Art Style Section -->
+                <div id="container_art" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h3 id="art_style_title" class="style1">Voxel Art Design</h3>
+                            <p id="art_description" class="style4">
+                                The game features a distinctive voxel art style that creates a charming, blocky aesthetic reminiscent of modern indie games. Each environment is carefully crafted with attention to color harmony and visual appeal, making the flying experience both relaxing and visually engaging.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Role Section -->
+                <div id="container_role" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h3 id="role_title" class="style1">My Role</h3>
+                            <p id="role_description" class="style4">
+                                Having an established team made it easier to organize and carry out this process. I was responsible for general production and development, coordinating the team and overseeing the project progress.<br><br>
+                                Our team consisted of:<br>
+                                • <strong>General Producer & Developer:</strong> <a href="https://www.linkedin.com/in/julimab" target="_blank">Julian Aguirre</a><br>
+                                • <strong>Game Developer:</strong> <a href="https://www.linkedin.com/in/dario-otranto-307a37190" target="_blank">Dario Otranto</a><br>
+                                • <strong>Game Design:</strong> <a href="https://www.linkedin.com/in/nicolas-ramos-marin" target="_blank">Nicolas Ramos Marin</a><br>
+                                • <strong>Pixel Art Artist:</strong> <a href="https://www.artstation.com/xrayo" target="_blank">Leandro Riquelme</a><br>
+                                • <strong>Voxel Art:</strong> <a href="https://www.linkedin.com/in/juancruz-moglianifrutos-909260275" target="_blank">Juan Cruz Mogliani</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Source Code Contact -->
+                <div id="container_source" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h3 id="source_title" class="style1">Source Code Access</h3>
+                            <p id="source_description" class="style4">
+                                If you're interested in accessing the source code for this project, please feel free to contact me at:
+                            </p>
+                            <p id="email_contact" class="style4">
+                                <strong>julian99aguirre@gmail.com</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
