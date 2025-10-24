@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Thuk Thay - Julian Aguirre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <meta name="description" content="Thuk Thay - Laotian card game digital adaptation by Julian Aguirre">
+    <link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,700;1,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/icons.js"></script>
+    <style>
+        .centered-image .frame img {
+            width: auto !important;
+            height: auto !important;
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .centered-content {
+            text-align: center;
+        }
+        
+        .centered-content h2, .centered-content h3, .centered-content h4 {
+            color: #ffffff !important;
+            text-align: center;
+        }
+        
+        .centered-content p, .centered-content ul, .centered-content li {
+            color: #cccccc !important;
+            text-align: center;
+        }
+        
+        .centered-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .centered-content ul li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main">
+            <div class="inner">
+                <!-- Back button -->
+                <div id="container01" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <ul id="buttons_back" class="style1 buttons">
+                                <li>
+                                    <a href="index.html" class="button n01" role="button">
+                                        <span class="label">← Back to Portfolio</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Header -->
+                <div id="container02" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <p id="project_platform" class="style3">Mobile Game</p>
+                            <h1 id="project_title" class="style2">Thuk Thay</h1>
+                            <p id="project_subtitle" class="style4">Laotian Card Game Digital Adaptation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Image -->
+                <div id="container03" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div id="main_image" class="style3 image centered-image" data-position="center">
+                                <span class="frame">
+                                    <img src="img/thuk-thay-main.PNG" alt="Thuk Thay Main Screenshot"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gameplay Video -->
+                <div id="container_video" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h2 id="video_title" class="style1">Gameplay Demo</h2>
+                            <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+                                <iframe src="https://www.youtube.com/embed/41VMlg2V-2I" 
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                        frameborder="0" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Description -->
+                <div id="container04" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h2 id="about_title" class="style1">About Thuk Thay</h2>
+                            <p id="project_description" class="style4">
+                                Thuk Thay (also spelled Tuk Tay or Took Tey) is a fun and fast-paced Laotian shedding card game that combines elements of strategy, luck, and psychological play. It's similar to games like President or Asshole, but with unique Laotian twists that make it highly interactive and competitive.
+                            </p>
+                            
+                            <h3 id="gameplay_title" class="style1">Game Rules & Mechanics</h3>
+                            <p id="gameplay_description" class="style4">
+                                <strong>Players:</strong> 4–6 (best with 5–6)<br>
+                                <strong>Deck:</strong> Standard 52-card deck<br>
+                                <strong>Goal:</strong> Be the first to get rid of all your cards
+                            </p>
+                            
+                            <h3 id="card_rankings_title" class="style1">Card Rankings</h3>
+                            <p id="card_rankings" class="style4">
+                                <strong>High to Low:</strong> 2 (highest) → A → K → Q → J → 10 → 9 → 8 → 7 → 6 → 5 → 4 → 3 (lowest)<br>
+                                <strong>Special Cards:</strong> 8s (Skip), 10s (Burn/Clear pile)
+                            </p>
+                            
+                            <h3 id="gameplay_flow_title" class="style1">How to Play</h3>
+                            <p id="gameplay_flow" class="style4">
+                                Players take turns playing cards of equal or higher rank than the previous play. You can play single cards, pairs, or sets of the same rank. If you can't play, you must pass. The first player to empty their hand wins and becomes "Thuk Thay" (President), while the last player becomes "Tong" (Asshole).
+                            </p>
+                            
+                            <h3 id="implementation_title" class="style1">Digital Implementation</h3>
+                            <p id="implementation_description" class="style4">
+                                This digital version focuses on the core shedding mechanics and strategic gameplay. While traditional features like "Bombs" (2s played out of turn) and some special moves weren't implemented, the game maintains the fast-paced, competitive spirit of the original.
+                            </p>
+                            
+                            <h3 id="role_title" class="style1">My Role</h3>
+                            <p id="role_description" class="style4">
+                                As a freelance developer, I handled every aspect of this project:<br>
+                                • <strong>Programming:</strong> Game logic and multiplayer systems<br>
+                                • <strong>Game Design:</strong> Rule adaptation and balancing<br>
+                                • <strong>UI/UX Design:</strong> User interface and player experience<br>
+                                • <strong>Core Mechanics:</strong> Card game systems and turn management<br>
+                                • <strong>Technical Implementation:</strong> Full development cycle
+                            </p>
+                            
+                            <h3 id="features_title" class="style1">Key Features</h3>
+                            <ul id="features_list" class="style4">
+                                <li>Authentic Laotian card game mechanics</li>
+                                <li>Multiplayer support for 4-6 players</li>
+                                <li>Strategic card play with skip and burn mechanics</li>
+                                <li>Intuitive touch-based interface</li>
+                                <li>Fast-paced competitive gameplay</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Source Code Contact -->
+                <div id="container_source" class="style3 container default">
+                    <div class="wrapper">
+                        <div class="inner centered-content">
+                            <h3 id="source_title" class="style1">Source Code Access</h3>
+                            <p id="source_description" class="style4">
+                                If you're interested in accessing the source code for this project, please feel free to contact me at:
+                            </p>
+                            <p id="email_contact" class="style4">
+                                <strong>julian99aguirre@gmail.com</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
